@@ -1,3 +1,5 @@
+<<<<<<< Updated upstream
+=======
 /* FONT-FAMILIES */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
@@ -148,13 +150,13 @@ header::after {
   width: 100%;
 }
 
-#your-agents__cards {
+#your-charachters__cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 3rem 6rem;
 }
 
-#your-agents__title {
+#your-charachters__title {
   font-family: 'Bebas Neue', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: 600;
   font-size: 5rem;
@@ -162,15 +164,15 @@ header::after {
   text-shadow: 4px 4px #ff4655;
 }
 
-.agent-card {
+.charachter-card {
   display: flex;
   overflow: visible;
   width: fit-content;
   transition: all 0.2s;
 }
 
-.agent-card__title,
-.agent-card__likes {
+.charachter-card__title,
+.charachter-card__likes {
   background-color: #303030;
   color: #fff;
   display: inline;
@@ -179,45 +181,46 @@ header::after {
   position: absolute;
 }
 
-.agent-card__title {
+.charachter-card__title {
   font-size: 2em;
   padding: 2px 5px;
   margin-top: 1em;
   margin-left: -1em;
 }
 
-.agent-card__likes {
+.charachter-card__likes {
   padding: 5px 7px;
   align-self: end;
 }
 
-.agent-card__container {
+.charachter-card__container {
   border: 1px solid #a5a5a5;
   padding: 0.5em;
 }
 
-.agent-card__comments-btn {
+.charachter-card__comments-btn {
   background-color: #303030;
   color: #fff;
   padding: 2px 0;
   font-size: 1em;
 }
 
-.agent-card:hover {
+.charachter-card:hover {
   background-color: #303030;
   box-shadow: 0 0 0 0.5rem #303030;
 }
 
-.agent-card:hover .agent-card__title {
+.charachter-card:hover .charachter-card__title {
   color: #ff4655;
   text-shadow: 0 0 15px #ff909a;
 }
 
-.agent-card:hover .agent-card__container {
+.charachter-card:hover .charachter-card__container {
   border-color: #fff;
 }
 
-.agent-card:hover .agent-card__comments-btn {
+.charachter-card:hover .charachter-card__comments-btn {
   background-color: #fff;
   color: #303030;
 }
+>>>>>>> Stashed changes
