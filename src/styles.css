@@ -97,6 +97,7 @@ header {
   right: 0;
   overflow: hidden;
   border: 0;
+  z-index: 3;
 }
 
 header::after {
@@ -183,7 +184,8 @@ header::after {
   font-size: 2em;
   padding: 2px 5px;
   margin-top: 1em;
-  margin-left: -1em;
+  margin-left: -1.5em;
+  text-transform: uppercase;
 }
 
 .character-card__likes {
@@ -194,6 +196,14 @@ header::after {
 .character-card__container {
   border: 1px solid #a5a5a5;
   padding: 0.5em;
+}
+
+.character-card__snapshot {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-blend-mode: soft-light;
+  background-color: #303030;
 }
 
 .character-card__comments-btn {
@@ -209,12 +219,17 @@ header::after {
 }
 
 .character-card:hover .character-card__title {
-  color: #ff4655;
-  text-shadow: 0 0 15px #ff909a;
+  color: #ffd753;
+  text-shadow: 0 0 15px #a5a5a5;
 }
 
 .character-card:hover .character-card__container {
   border-color: #fff;
+}
+
+.character-card:hover .character-card__snapshot,
+.character-card:hover .character-card__likes {
+  background-color: #ff4757;
 }
 
 .character-card:hover .character-card__comments-btn {
