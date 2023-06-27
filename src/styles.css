@@ -8,7 +8,6 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 a {
@@ -50,6 +49,10 @@ a {
 
 .p-1 {
   padding: 1em;
+}
+
+.g-05 {
+  gap: 0.5em;
 }
 
 .g-1 {
@@ -148,6 +151,7 @@ header::after {
 #your-agents__cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 6rem;
 }
 
 #your-agents__title {
@@ -162,9 +166,6 @@ header::after {
   display: flex;
   overflow: visible;
   width: fit-content;
-  position: relative;
-  left: -2em;
-  margin-bottom: 2em;
 }
 
 .agent-card__title,
@@ -173,42 +174,28 @@ header::after {
   color: #fff;
   display: inline;
   padding: 2px 5px;
-  position: relative;
+  width: fit-content;
+  overflow: visible;
+  position: absolute;
 }
 
 .agent-card__title {
   font-size: 2em;
-  height: fit-content;
-  top: 20%;
-  left: 2em;
-  overflow: visible;
+  margin-top: 1em;
+  margin-left: -1em;
 }
 
 .agent-card__likes {
-  float: right;
-  top: -1.8em;
-}
-
-.agent-card__border {
-  border: 1px solid #a5a5a5;
-  max-width: max-content;
-  max-height: 13.2em;
-  overflow: hidden;
-  grid-column: 1/2;
+  align-self: end;
 }
 
 .agent-card__container {
   border: 1px solid #a5a5a5;
   padding: 0.5em;
-  max-width: 20em;
-  max-height: 85%;
-  overflow: hidden;
 }
 
 .agent-card__comments-btn {
   background-color: #303030;
   color: #fff;
   padding: 2px 0;
-  position: relative;
-  top: -1.2em;
 }
