@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon" />
     <title>VALORANT: Your Agents</title>
   <script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
   <body>
@@ -23,19 +24,34 @@
           </svg>
         </div>
         <div id="header__desktop-menu" class="as-center">
-            <ul id="desktop-menu__list" class="g-row m-auto">
-                <li class="desktop-menu__element d-col jc-center"><a>YOUR AGENTS</a><span></span></li>
-                <li class="desktop-menu__element d-col jc-center"><a>MAPS</a><span></span></li>
-                <li class="desktop-menu__element d-col jc-center"><a>LEADERBOARDS</a><span></span></li>
-            </ul>
+          <ul id="desktop-menu__list" class="g-row m-auto">
+            <li class="desktop-menu__element d-col jc-center"><a href="#">YOUR AGENTS</a><span id="underline-animation"></span></li>
+            <li class="desktop-menu__element d-col jc-center"><a href="#">MAPS</a><span id="underline-animation"></span></li>
+            <li class="desktop-menu__element d-col jc-center"><a href="#">LEADERBOARDS</a><span id="underline-animation"></span></li>
+          </ul>
         </div>
       </div>
     </header>
     <main>
-
+      <section id="your-agents" class="padding-container">
+        <div id="your-agents__container">
+          <div id="your-agents__title-wrapper">
+            <h1 id="your-agents__title">YOUR AGENTS</h1>
+          </div>
+          <div id="your-agents__cards">
+            <div class="agent-card">
+              <h3 class="agent-card__title">JETT</h3>
+                <div class="agent-card__container">
+                  <img class="agent-card__snapshot w-100" src="https://www.theloadout.com/wp-content/sites/theloadout/2022/06/valorant-jett-icebox-exploit.jpg" />
+                  <p class="agent-card__likes ta-end"><i class="bi bi-heart"></i> 5 LIKES</p>
+                  <div class="agent-card__comments-btn ta-center w-100">COMMENTS</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-
-    </footer>
+    <footer></footer>
   </body>
 </html>
