@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 /* FONT-FAMILIES */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
@@ -153,7 +151,7 @@ header::after {
 #your-charachters__cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 3rem 6rem;
+  gap: 5.3vh 6.6vw;
 }
 
 #your-charachters__title {
@@ -223,4 +221,3 @@ header::after {
   background-color: #fff;
   color: #303030;
 }
->>>>>>> Stashed changes
