@@ -33,67 +33,74 @@
       </div>
     </header>
     <main>
+      <section id="character-details" class="d-row jc-center">
+        <section id="character-details__window" class="d-col p-2 g-2">
+          <div id="character-details__body" class="d-row g-1">
+            <img id="character-details__portrait" src="https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/displayicon.png" />
+            <div class="wrapper d-col g-2">
+              <div class="wrapper d-row g-1 ai-center">
+                <div class="wrapper d-col g-1">
+                  <h2>BIO</h2>
+                  <p id="character-details__description">
+                    <b>Gekko</b> the Angeleno leads a tight-knit crew of calamitous creatures. His buddies bound forward, scattering enemies out of the way, with Gekko chasing them
+                    down to regroup and go again.
+                  </p>
+                </div>
+                <div id="character-details__role" class="d-col ta-center ai-center g-05">
+                  <b>ROLE</b>
+                  <img id="character-details__role-icon" src="https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png" />
+                  <b>INITIATOR</b>
+                </div>
+              </div>
+              <div id="character-details__abilities" class="d-col g-1 jc-center">
+                <b>ABILITIES</b>
+                <ul id="character-details__abilities-list" class="d-row g-1">
+                  <li class="abilities-list__element d-row ai-center g-05">
+                    <img src="https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ability1/displayicon.png" />
+                    <span class="abilities-list__ability-name">WINGMAN</span>
+                  </li>
+                  <li class="abilities-list__element d-row ai-center g-05">
+                    <img src="https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ability2/displayicon.png" />
+                    <span class="abilities-list__ability-name">DIZZY</span>
+                  </li>
+                  <li class="abilities-list__element d-row ai-center g-05">
+                    <img src="https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/grenade/displayicon.png" />
+                    <span class="abilities-list__ability-name">MOSH PIT</span>
+                  </li>
+                  <li class="abilities-list__element d-row ai-center g-05">
+                    <img src="https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ultimate/displayicon.png" />
+                    <span class="abilities-list__ability-name">TRASH</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="character-details__comments" class="d-col g-1">
+            <h2 id="comments__title">COMMENTS (2)</h2>
+            <div id="comments__list" class="wrapper d-col g-05">
+              <p><b>06.27.2023</b> It's my favorite agent!</p>
+              <p><b>03.27.2023</b> This dude is awesome!</p>
+            </div>
+          </div>
+
+          <div id="character-details__add-comment" class="d-col g-1 as-center">
+            <h2 id="add-comment__title">ADD A COMMENT</h2>
+            <form class="d-col g-1">
+              <input type="text" placeholder="Your name" id="add-comment__name-input" class="p-05" required />
+              <textarea placeholder="Your insights" id="add-comment__text-input" class="p-05" required></textarea>
+              <button type="submit" id="add-comment__comments-btn" class="ta-center w-100">COMMENT</button>
+            </form>
+          </div>
+
+        </section>
+      </section>
       <section id="your-characters" class="padding-container">
         <div id="your-characters__container">
           <div id="your-characters__title-wrapper">
             <h1 id="your-characters__title">YOUR AGENTS</h1>
           </div>
-          
-          <div id="your-characters__cards">
-            <!-- <div class="character-card d-col">
-              <h3 class="character-card__title">JETT</h3>
-              <div class="character-card__container d-col g-05">
-                <img class="character-card__snapshot w-100" src="https://www.theloadout.com/wp-content/sites/theloadout/2022/06/valorant-jett-icebox-exploit.jpg" />
-                <p class="character-card__likes ta-end"><i class="bi bi-heart"></i> 5 LIKES</p>
-                <button type="button" class="character-card__comments-btn ta-center w-100">COMMENTS</button>
-              </div>
-            </div>
-
-            <div class="character-card d-col">
-              <h3 class="character-card__title">RAZE</h3>
-              <div class="character-card__container d-col g-05">
-                <img class="character-card__snapshot w-100" src="https://www.theloadout.com/wp-content/sites/theloadout/2022/10/valorant-tier-list-raze.jpg" />
-                <p class="character-card__likes ta-end"><i class="bi bi-heart"></i> 5 LIKES</p>
-                <button type="button" class="character-card__comments-btn ta-center w-100">COMMENTS</button>
-              </div>
-            </div>
-
-            <div class="character-card d-col">
-              <h3 class="character-card__title">BREACH</h3>
-              <div class="character-card__container d-col g-05">
-                <img class="character-card__snapshot w-100" src="https://www.theloadout.com/wp-content/sites/theloadout/2022/10/valorant-tier-list-breach.jpg" />
-                <p class="character-card__likes ta-end"><i class="bi bi-heart"></i> 5 LIKES</p>
-                <button type="button" class="character-card__comments-btn ta-center w-100">COMMENTS</button>
-              </div>
-            </div>
-
-            <div class="character-card d-col">
-              <h3 class="character-card__title">JETT</h3>
-              <div class="character-card__container d-col g-05">
-                <img class="character-card__snapshot w-100" src="https://www.theloadout.com/wp-content/sites/theloadout/2022/06/valorant-jett-icebox-exploit.jpg" />
-                <p class="character-card__likes ta-end"><i class="bi bi-heart"></i> 5 LIKES</p>
-                <button type="button" class="character-card__comments-btn ta-center w-100">COMMENTS</button>
-              </div>
-            </div>
-
-            <div class="character-card d-col">
-              <h3 class="character-card__title">RAZE</h3>
-              <div class="character-card__container d-col g-05">
-                <img class="character-card__snapshot w-100" src="https://www.theloadout.com/wp-content/sites/theloadout/2022/10/valorant-tier-list-raze.jpg" />
-                <p class="character-card__likes ta-end"><i class="bi bi-heart"></i> 5 LIKES</p>
-                <button type="button" class="character-card__comments-btn ta-center w-100">COMMENTS</button>
-              </div>
-            </div>
-
-            <div class="character-card d-col">
-              <h3 class="character-card__title">BREACH</h3>
-              <div class="character-card__container d-col g-05">
-                <img class="character-card__snapshot w-100" src="https://www.theloadout.com/wp-content/sites/theloadout/2022/10/valorant-tier-list-breach.jpg" />
-                <p class="character-card__likes ta-end"><i class="bi bi-heart"></i> 5 LIKES</p>
-                <button type="button" class="character-card__comments-btn ta-center w-100">COMMENTS</button>
-              </div>
-            </div> -->
-          </div>
+          <div id="your-characters__cards"></div>
         </div>
       </section>
     </main>
