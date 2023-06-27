@@ -148,13 +148,13 @@ header::after {
   width: 100%;
 }
 
-#your-charachters__cards {
+#your-characters__cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 5.3vh 6.6vw;
 }
 
-#your-charachters__title {
+#your-characters__title {
   font-family: 'Bebas Neue', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: 600;
   font-size: 5rem;
@@ -162,15 +162,15 @@ header::after {
   text-shadow: 4px 4px #ff4655;
 }
 
-.charachter-card {
+.character-card {
   display: flex;
   overflow: visible;
   width: fit-content;
   transition: all 0.2s;
 }
 
-.charachter-card__title,
-.charachter-card__likes {
+.character-card__title,
+.character-card__likes {
   background-color: #303030;
   color: #fff;
   display: inline;
@@ -179,45 +179,45 @@ header::after {
   position: absolute;
 }
 
-.charachter-card__title {
+.character-card__title {
   font-size: 2em;
   padding: 2px 5px;
   margin-top: 1em;
   margin-left: -1em;
 }
 
-.charachter-card__likes {
+.character-card__likes {
   padding: 5px 7px;
   align-self: end;
 }
 
-.charachter-card__container {
+.character-card__container {
   border: 1px solid #a5a5a5;
   padding: 0.5em;
 }
 
-.charachter-card__comments-btn {
+.character-card__comments-btn {
   background-color: #303030;
   color: #fff;
   padding: 2px 0;
   font-size: 1em;
 }
 
-.charachter-card:hover {
+.character-card:hover {
   background-color: #303030;
   box-shadow: 0 0 0 0.5rem #303030;
 }
 
-.charachter-card:hover .charachter-card__title {
+.character-card:hover .character-card__title {
   color: #ff4655;
   text-shadow: 0 0 15px #ff909a;
 }
 
-.charachter-card:hover .charachter-card__container {
+.character-card:hover .character-card__container {
   border-color: #fff;
 }
 
-.charachter-card:hover .charachter-card__comments-btn {
+.character-card:hover .character-card__comments-btn {
   background-color: #fff;
   color: #303030;
 }
