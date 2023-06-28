@@ -81,22 +81,12 @@ const renderAgentDescription = async (id) => {
     </div>
   </div>
 
-  <div id="character-details__comments" class="d-col g-1">
+  <div id="character-details__comments" class="d-col g-1 ai-center">
     <h2 id="comments__title"></h2>
     <div id="comments__list" class="wrapper d-col g-05">
       <ul id="agent-modal__comments-list"></ul>
     </div>
   </div>
-
-  <!--
-  <div id="character-details__add-comment" class="d-col g-1 as-center">
-    <h2 id="add-comment__title">ADD A COMMENT</h2>
-    <form class="d-col g-1">
-      <input type="text" placeholder="Your name" id="add-comment__name-input" class="p-05" required />
-      <textarea placeholder="Your insights" id="add-comment__text-input" class="p-05" required></textarea>
-      <button type="submit" id="add-comment__comments-btn" class="ta-center w-100">COMMENT</button>
-    </form>
-  </div> -->
   `;
   const characterAbilities = document.getElementById('character-details__abilities-list');
   agentAbilities.forEach((ability) => {
