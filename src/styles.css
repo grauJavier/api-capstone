@@ -218,6 +218,10 @@ header::after {
   align-self: end;
 }
 
+.bi-heart {
+  cursor: pointer;
+}
+
 .character-card__container {
   border: 1px solid #a5a5a5;
   padding: 0.5em;
