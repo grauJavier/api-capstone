@@ -178,9 +178,14 @@ header::after {
 #your-characters__title {
   font-family: 'Bebas Neue', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: 600;
-  font-size: 5rem;
+  font-size: 5em;
   color: #303030;
   text-shadow: 4px 4px #ff4655;
+}
+
+#your-characters__amount {
+  font-family: inherit;
+  font-size: 3rem;
 }
 
 .character-card {
@@ -192,7 +197,6 @@ header::after {
 
 .character-card__title,
 .character-card__likes {
-  background-color: #303030;
   color: #fff;
   display: inline;
   width: fit-content;
@@ -201,6 +205,7 @@ header::after {
 }
 
 .character-card__title {
+  background-color: #303030;
   font-size: 2rem;
   padding: 2px 5px;
   margin-top: 1em;
@@ -249,8 +254,7 @@ header::after {
   background-color: #303030;
 }
 
-.character-card:hover .character-card__snapshot,
-.character-card:hover .character-card__likes {
+.character-card:hover .character-card__snapshot {
   background-color: #ff4757;
 }
 
