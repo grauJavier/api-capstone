@@ -9,7 +9,7 @@ const renderCharacter = async (result) => {
         <div class="character-card__container d-col g-05">
             <img class="character-card__snapshot w-100" src="${character.fullPortrait}" style="background-image: url(${character.background})"/>
             <p class="character-card__likes ta-end"><i class="bi bi-heart"></i> 5 LIKES</p>
-            <button type="button" class="character-card__comments-btn ta-center w-100">COMMENTS</button>
+            <button type="button" class="character-card__comments-btn ta-center w-100" id="agent-card__open-comments-btn" data-id="${character.uuid}">COMMENTS</button>
         </div>
     </div>`;
 
