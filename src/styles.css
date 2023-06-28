@@ -314,6 +314,10 @@ header::after {
   margin-left: 2em;
 }
 
+#comments__list ul {
+  list-style-type: none;
+}
+
 /* Modal Section */
 .agent-modal {
   display: none;
