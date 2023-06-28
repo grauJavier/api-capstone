@@ -283,6 +283,10 @@ header::after {
 .agent-modal__content {
   background-color: #303030 !important;
   color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
 }
 
 #character-details__portrait {
@@ -328,15 +332,7 @@ header::after {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.4);
-}
-
-.agent-modal__content {
-  background-color: #fefefe;
-  margin: 10% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .agent-modal__close-btn {
@@ -353,44 +349,8 @@ header::after {
   cursor: pointer;
 }
 
-#character-details {
-  background-color: #ffd753;
-  position: absolute;
-  top: 0;
-  z-index: 4;
-}
-
 #character-details__window {
   background-color: #303030;
   color: #fff;
   max-width: 60%;
-}
-
-#character-details__portrait {
-  background-image: linear-gradient(to right, #c7f458ff, #d56324ff);
-  max-width: 33.333%;
-}
-
-#character-details__role-icon {
-  max-height: 3em;
-  max-width: 3em;
-}
-
-#character-details__abilities-list {
-  list-style-type: none;
-}
-
-.abilities-list__element {
-  padding: 0.5em;
-  background-color: #ff4655;
-  border-radius: 0.3em;
-}
-
-.abilities-list__element img {
-  max-height: 2em;
-  max-width: 2em;
-}
-
-#comments__list {
-  margin-left: 2em;
 }
