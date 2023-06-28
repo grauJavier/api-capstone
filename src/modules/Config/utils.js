@@ -22,6 +22,17 @@ const postComment = async (comment) => {
   return result;
 };
 
+const getComment = async (id) => {
+  const response = await fetch(`${commentsUrl}?item_id=${id}`, {
+    method: 'GET',
+    headers: {
+      'Content-type': 'application/json',
+    },
+  });
+  const data = await response.json();
+  return data;
+};
+
 export {
-  getAgentsById, postComment,
+  getAgentsById, postComment, getComment,
 };
