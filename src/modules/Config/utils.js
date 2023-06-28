@@ -33,6 +33,25 @@ const getComment = async (id) => {
   return data;
 };
 
+// eslint-disable-next-line consistent-return
+const renderComments = async (id) => {
+  try {
+    const comments = await getComment(id);
+    const commentsList = document.getElementById('agent-modal__comments-list');
+    const commentCount = document.getElementById('comments__title');
+    commentCount.innerHTML = `Comments(${counter(comments)})`;
+    commentsList.innerHTML = '';
+    comments.forEach((comment) => {
+      const date = comment.creation_date;
+      commentsList.innerHTML += `
+      <li>${date} ${comment.username}: ${comment.comment}</li>
+    `;
+    });
+  } catch (error) {
+    return null;
+  }
+};
+
 export {
-  getAgentsById, postComment, getComment,
+  getAgentsById, renderComments, postComment, getComment,
 };
