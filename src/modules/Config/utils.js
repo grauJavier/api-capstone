@@ -9,4 +9,19 @@ const getAgentsById = async (id) => {
   return agent;
 };
 
-export { getAgentsById };
+const postComment = async (comment) => {
+  const response = await fetch(commentsUrl, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(comment),
+  });
+  const data = await response.json();
+  const { result } = data;
+  return result;
+};
+
+export {
+  getAgentsById, postComment,
+};
