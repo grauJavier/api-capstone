@@ -33,6 +33,8 @@ const getComment = async (id) => {
   return data;
 };
 
+const counter = (data) => (data.length ? data.length : 0);
+
 // eslint-disable-next-line consistent-return
 const renderComments = async (id) => {
   try {
