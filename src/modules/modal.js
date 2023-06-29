@@ -24,8 +24,8 @@ form.addEventListener('submit', async (e) => {
     username: name,
     comment: userComment,
   });
-  name.value = '';
-  userComment.value = '';
+  renderComments(submitCommentBtn.dataset.id);
+  form.reset();
 });
 
 export { showModal, closeModal };

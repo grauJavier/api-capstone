@@ -93,7 +93,7 @@ a {
 }
 
 .padding-container {
-  padding: 3vw 6vw;
+  padding: 3vw 3vw 3vw 8vw;
 }
 
 .ta-center {
@@ -302,7 +302,6 @@ header::after {
 }
 
 #character-details__portrait {
-  background-image: linear-gradient(to right, #c7f458ff, #d56324ff);
   max-width: 33.333vw;
   max-height: 33.333vh;
 }
@@ -364,11 +363,48 @@ header::after {
   right: -0.3em;
 }
 
+#character-details__add-comment {
+  margin-top: 1em;
+}
+
+#agent-modal__comment-form {
+  padding: 0 6vw;
+}
+
 .agent-modal__close-btn:hover,
 .agent-modal__close-btn:focus {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
+}
+
+#agent-modal__name,
+#agent-modal__comment {
+  background-color: #525252;
+  color: #fff;
+  border: none;
+}
+
+#agent-modal__name:focus,
+#agent-modal__comment:focus {
+  outline: 2px solid #ffd753;
+}
+
+#agent-modal__name::placeholder,
+#agent-modal__comment::placeholder {
+  color: #a5a5a5;
+}
+
+#agent-modal__comment-btn {
+  background-color: #ffd753;
+  color: #303030;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#agent-modal__comment-btn:active {
+  background-color: #303030;
+  color: #ffd753;
 }
 
 #character-details__window {
@@ -403,4 +439,16 @@ footer {
 #footer__logo-riot:hover path,
 #footer__logo-valorant:hover path {
   fill: #fff;
+}
+
+@media only screen and (max-width: 1000px) {
+  #your-characters__cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #your-characters__cards {
+    grid-template-columns: 1fr;
+  }
 }
