@@ -303,7 +303,13 @@ header::after {
 
 #character-details__portrait {
   background-image: linear-gradient(to right, #c7f458ff, #d56324ff);
-  max-width: 33.333%;
+  max-width: 33.333vw;
+  max-height: 33.333vh;
+}
+
+#character-details__role {
+  position: relative;
+  top: 0.7em;
 }
 
 #character-details__role-icon {
@@ -313,6 +319,7 @@ header::after {
 
 #character-details__abilities-list {
   list-style-type: none;
+  flex-wrap: wrap;
 }
 
 .abilities-list__element {
@@ -352,6 +359,9 @@ header::after {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  position: relative;
+  top: -0.6em;
+  right: -0.3em;
 }
 
 .agent-modal__close-btn:hover,
