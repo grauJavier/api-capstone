@@ -25,9 +25,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 "To-Do List" Project <a name="about-project"></a>
+# 📖 "API CAPSTONE" Project <a name="about-project"></a>
 
-The **To-Do List Project** is an engaging and practical exercise that aims to recreate the functionality of an old web app called [Minimalist](https://web.archive.org/web/20180320194056/http://www.getminimalist.com:80/). This project provides individuals with an opportunity to learn and practice the tools and best practices of webpage building, using compilers.
+The **VALORANT** is a website that displays agents from the VALORANT game using the valorant [api](https://valorant-api.com/v1/agents). It allows you to also like and comment on the agents
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -68,7 +68,7 @@ The **To-Do List Project** is an engaging and practical exercise that aims to re
 
 <!-- Live Demo -->
 # 🚀 Live Demo <a name="live-demo"></a>
-To access the Live Demo [Click here!](https://graujavier.github.io/to-do-list/dist/)
+To access the Live Demo [Click here!](https://graujavier.github.io/api-capstone/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -90,7 +90,7 @@ To run this project you need:
 
 Clone this repository to your desired folder with git:
 
-`git clone https://github.com/grauJavier/to-do-list.git`
+`git clone https://github.com/grauJavier/api-capstone.git`
 
 ### Install
 
@@ -106,7 +106,7 @@ No run test is available.
 
 ### Deployment
 
-Deployment link: https://graujavier.github.io/to-do-list/dist/
+Deployment link: https://graujavier.github.io/api-capstone/dist/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,9 +119,10 @@ Deployment link: https://graujavier.github.io/to-do-list/dist/
 - Twitter: [@jgrauchile](https://twitter.com/jgrauchile)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/javiergrau)
 
-👤 **Nicolas Emiliano** (`jest.test` TDD & Framework)
-- GitHub: [@Zven94](https://github.com/Zven94)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/nicolas-bola%C3%B1ez-520372222/)
+👤 **Agyare Kissi Kenneth** 
+- GitHub: [@githubhandle](https://github.com/over-geek)
+- Twitter: [@twitterhandle](https://twitter.com/KissiKenneth)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kenneth-agyare-kissi-673a01186/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -156,7 +157,7 @@ If you like this project gift us with a nice comment!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Original idea by [@mshwery](https://twitter.com/mshwery)
+Thank you Valorant for the [api](https://dash.valorant-api.com/endpoints/agents)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
