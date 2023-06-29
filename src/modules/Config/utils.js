@@ -1,5 +1,28 @@
 const characterApi = 'https://valorant-api.com/v1/agents';
 const commentsUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/47HBg6Pp1846iMUprtBv/comments';
+const likesUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/47HBg6Pp1846iMUprtBv/likes';
+
+const addLike = async (characterID) => {
+  await fetch(likesUrl, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ item_id: characterID }),
+  });
+};
+
+const getLike = async () => {
+  const response = await fetch(likesUrl, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+
+  const data = await response.json();
+  return data;
+};
 
 const getAgentsById = async (id) => {
   const response = await fetch(characterApi);
@@ -100,5 +123,5 @@ const renderAgentDescription = async (id) => {
 };
 
 export {
-  renderAgentDescription, getAgentsById, renderComments, postComment, getComment,
+  renderAgentDescription, getAgentsById, renderComments, postComment, getComment, addLike, getLike,
 };
