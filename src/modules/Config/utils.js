@@ -35,16 +35,13 @@ const getAgentsById = async (id) => {
 };
 
 const postComment = async (comment) => {
-  const response = await fetch(commentsUrl, {
+  await fetch(commentsUrl, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(comment),
   });
-  const data = await response.json();
-  const { result } = data;
-  return result;
 };
 
 const getComment = async (id) => {
@@ -84,7 +81,7 @@ const renderAgentDescription = async (id) => {
   const agentDescriptionContainer = document.querySelector('.agent-modal__agent-description');
   agentDescriptionContainer.innerHTML = `
   <div id="character-details__body" class="d-row g-1">
-    <img id="character-details__portrait" src="${agent[0].displayIcon}" />
+    <img id="character-details__portrait" src="${agent[0].displayIcon}" style="background-image: linear-gradient(to right, #${agent[0].backgroundGradientColors[0]}, #${agent[0].backgroundGradientColors[1]});" />
     <div class="wrapper d-col g-2">
       <div class="wrapper d-row g-1 ai-center">
         <div class="wrapper d-col g-1">

@@ -93,7 +93,7 @@ a {
 }
 
 .padding-container {
-  padding: 3vw 6vw;
+  padding: 3vw 3vw 3vw 8vw;
 }
 
 .ta-center {
@@ -135,8 +135,7 @@ header::after {
   background-color: #ece8e1;
 }
 
-#header__logo path,
-#footer__logo path {
+#header__logo path {
   fill: #fff;
 }
 
@@ -303,8 +302,13 @@ header::after {
 }
 
 #character-details__portrait {
-  background-image: linear-gradient(to right, #c7f458ff, #d56324ff);
-  max-width: 33.333%;
+  max-width: 33.333vw;
+  max-height: 33.333vh;
+}
+
+#character-details__role {
+  position: relative;
+  top: 0.7em;
 }
 
 #character-details__role-icon {
@@ -314,6 +318,7 @@ header::after {
 
 #character-details__abilities-list {
   list-style-type: none;
+  flex-wrap: wrap;
 }
 
 .abilities-list__element {
@@ -353,6 +358,17 @@ header::after {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  position: relative;
+  top: -0.6em;
+  right: -0.3em;
+}
+
+#character-details__add-comment {
+  margin-top: 1em;
+}
+
+#agent-modal__comment-form {
+  padding: 0 6vw;
 }
 
 .agent-modal__close-btn:hover,
@@ -360,6 +376,36 @@ header::after {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
+}
+
+#agent-modal__name,
+#agent-modal__comment {
+  background-color: #525252;
+  color: #fff;
+  border: none;
+  resize: none;
+}
+
+#agent-modal__name:focus,
+#agent-modal__comment:focus {
+  outline: 2px solid #ffd753;
+}
+
+#agent-modal__name::placeholder,
+#agent-modal__comment::placeholder {
+  color: #a5a5a5;
+}
+
+#agent-modal__comment-btn {
+  background-color: #ffd753;
+  color: #303030;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#agent-modal__comment-btn:active {
+  background-color: #303030;
+  color: #ffd753;
 }
 
 #character-details__window {
@@ -370,11 +416,11 @@ header::after {
 
 /* Footer */
 footer {
-  background-color: #111;
+  background-color: #303030;
 }
 
 .footer__copyright-text {
-  color: #7e7e7e;
+  color: #a5a5a5;
   font-weight: 500;
   font-size: 13px;
   text-align: center;
@@ -384,4 +430,26 @@ footer {
 
 #footer__logo {
   margin-bottom: 1.5em;
+}
+
+#footer__logo-riot path,
+#footer__logo-valorant path {
+  fill: #808080;
+}
+
+#footer__logo-riot:hover path,
+#footer__logo-valorant:hover path {
+  fill: #fff;
+}
+
+@media only screen and (max-width: 1000px) {
+  #your-characters__cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #your-characters__cards {
+    grid-template-columns: 1fr;
+  }
 }
