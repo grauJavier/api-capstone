@@ -369,7 +369,7 @@ header::after {
 }
 
 /* Footer */
-footer { 
+footer {
   background-color: #111;
 }
 
@@ -378,13 +378,10 @@ footer {
   font-weight: 500;
   font-size: 13px;
   text-align: center;
+  width: 65%;
+  margin: 0 auto;
 }
 
 #footer__logo {
   margin-bottom: 1.5em;
-}
-
-.footer__copyright-text {
-  width: 65%;
-  margin: 0 auto;
 }
