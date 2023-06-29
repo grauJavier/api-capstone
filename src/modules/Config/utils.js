@@ -1,3 +1,5 @@
+import counter from '../commentCounter.js';
+
 const characterApi = 'https://valorant-api.com/v1/agents';
 const commentsUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/47HBg6Pp1846iMUprtBv/comments';
 const likesUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/47HBg6Pp1846iMUprtBv/likes';
@@ -56,15 +58,12 @@ const getComment = async (id) => {
   return data;
 };
 
-const counter = (data) => (data.length ? data.length : 0);
-
 // eslint-disable-next-line consistent-return
 const renderComments = async (id) => {
   try {
     const comments = await getComment(id);
     const commentsList = document.getElementById('agent-modal__comments-list');
     const commentCount = document.getElementById('comments__title');
-    commentCount.innerHTML = `Comments(${counter(comments)})`;
     commentsList.innerHTML = '';
     comments.forEach((comment) => {
       const date = comment.creation_date;
@@ -72,6 +71,7 @@ const renderComments = async (id) => {
       <li>${date} ${comment.username}: ${comment.comment}</li>
     `;
     });
+    commentCount.innerHTML = `Comments(${counter(commentsList)})`;
   } catch (error) {
     return null;
   }
