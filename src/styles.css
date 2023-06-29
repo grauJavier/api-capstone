@@ -135,8 +135,7 @@ header::after {
   background-color: #ece8e1;
 }
 
-#header__logo path,
-#footer__logo path {
+#header__logo path {
   fill: #fff;
 }
 
@@ -370,11 +369,11 @@ header::after {
 
 /* Footer */
 footer {
-  background-color: #111;
+  background-color: #303030;
 }
 
 .footer__copyright-text {
-  color: #7e7e7e;
+  color: #a5a5a5;
   font-weight: 500;
   font-size: 13px;
   text-align: center;
@@ -384,4 +383,14 @@ footer {
 
 #footer__logo {
   margin-bottom: 1.5em;
+}
+
+#footer__logo-riot path,
+#footer__logo-valorant path {
+  fill: #808080;
+}
+
+#footer__logo-riot:hover path,
+#footer__logo-valorant:hover path {
+  fill: #fff;
 }
