@@ -9,6 +9,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
 - [🚀 Live Demo](#live-demo)
+- [⏯️ Video Presentation](#video-presentation)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -69,6 +70,12 @@ The **VALORANT** is a website that displays agents from the VALORANT game using 
 <!-- Live Demo -->
 # 🚀 Live Demo <a name="live-demo"></a>
 To access the Live Demo [Click here!](https://graujavier.github.io/api-capstone/dist/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Video Presentation -->
+# ⏯️ Video Presentation <a name="video-presentation"></a>
+To access the Video Link [Click here!](https://drive.google.com/file/d/1OuF3GQWUk72AFLL-YD9BV8LMb3kgjqq1/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
