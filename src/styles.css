@@ -383,6 +383,7 @@ header::after {
   background-color: #525252;
   color: #fff;
   border: none;
+  resize: none;
 }
 
 #agent-modal__name:focus,
