@@ -3,7 +3,8 @@ const renderCharacter = async (result) => {
   const characters = result.data;
 
   characters.forEach((character) => {
-    const characterCard = `
+    if (character.uuid !== 'ded3520f-4264-bfed-162d-b080e2abccf9') {
+      const characterCard = `
     <div class="character-card d-col">
         <h3 class="character-card__title">${character.displayName}</h3>
         <div class="character-card__container d-col g-05">
@@ -12,7 +13,8 @@ const renderCharacter = async (result) => {
             <button type="button" class="character-card__comments-btn ta-center w-100" id="agent-card__open-comments-btn" data-id="${character.uuid}">COMMENTS</button>
         </div>
     </div>`;
-    characterContainer.insertAdjacentHTML('beforeend', characterCard);
+      characterContainer.insertAdjacentHTML('beforeend', characterCard);
+    }
   });
 };
 export default renderCharacter;
