@@ -101,7 +101,30 @@ Clone this repository to your desired folder with git:
 
 ### Install
 
-No installation is required.
+Clone this repository to your desired folder:
+
+`cd my-folder`
+`git clone https://github.com/grauJavier/api-capstone.git`
+
+### Install
+
+Install this project with:
+
+- Install Node Modules
+
+`npm install`
+
+### Usage
+
+To run the project, execute the following command:
+- Start the development server
+`npm start`
+
+### Run tests
+
+To run tests, run the following command:
+
+- Test the items Counter and Comments Counter functions with `npm test`
 
 ### Usage
 
@@ -164,7 +187,7 @@ If you like this project gift us with a nice comment!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Thank you Valorant for the [api](https://dash.valorant-api.com/endpoints/agents)
+Thanks to Valorant for the [API](https://dash.valorant-api.com/endpoints/agents).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
